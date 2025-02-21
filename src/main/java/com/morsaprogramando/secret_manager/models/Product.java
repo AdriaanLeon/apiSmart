@@ -2,6 +2,11 @@ package com.morsaprogramando.secret_manager.models;
 
 public class Product {
     private long id;
+    private String productName;
+    private String description;
+    private double price;
+    private String Category;
+
     public long getId() {
         return id;
     }
@@ -26,8 +31,10 @@ public class Product {
     public void setPrice(double price) {
         this.price = price;
     }
-    private String productName;
-    private String description;
-    private double price;
-    
+    public String getCategory() {
+        return Category;
+    }
+    public void setCategory(String category) {
+        Category = category;
+    }
 }
